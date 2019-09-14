@@ -21,7 +21,7 @@
     height: auto;
     margin: 0 auto;
   }
-  #wrap > div {
+  #wrap  div {
     float: left;
     box-sizing: border-box;
     width: 280px;
@@ -31,10 +31,10 @@
     border-radius: 5px;
     background: #fff;
   }
-  #wrap > div > img {
+  #wrap  div  img {
     width: 100%;
   }
-  #wrap > div > a {
+  #wrap  div  a {
     display: block;
     font-size: 18px;
     font-weight: bold;
