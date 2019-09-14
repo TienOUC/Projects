@@ -1,0 +1,205 @@
+@charset: "utf-8";
+@comColor: #464646;
+@fontColor: #fff;
+//reset
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-top: 70px;
+  min-width: 300px;
+  min-height: 400px;
+  font-family: "Microsoft YaHei","微软雅黑";
+
+}
+//公共样式
+.hide{
+    display: none;
+}
+
+.com_width {
+  min-width: 300px;
+}
+.content_title,.notes_title,.skill-title{
+    padding-bottom: 20px;
+}
+//header
+.header {
+  background-color: #262626 !important;
+  height: 70px;
+  line-height: 70px;
+
+  .logo {
+    span {
+      color: @fontColor;
+      font-size: 24px;
+      i{
+        margin-left: 5px;
+      }
+    }
+  }
+  .serach {
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    float: right;
+    input {
+      margin-top: 20px;
+      height: 30px;
+      border: none;
+      outline-style: none;
+    }
+    .btn_show {
+      height: 30px;
+      background-color: @comColor;
+      color: #d1cece;
+      border-color: @comColor;       
+      &:hover {
+        color: @fontColor;
+      }
+      span {
+        top: -4px;
+      }
+    }
+  }
+}
+//banner
+.banner {
+  padding: 0 auto;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 15%,#e2e1e1 100%);
+  p{
+      font-family: Arial, Helvetica, sans-serif;
+      color: @comColor;
+  }
+  a{
+      background-color: @comColor;
+      border: none;
+      color: @fontColor;
+  }
+}
+//cotent part
+.content {
+    //itemList
+  .content_itemList {
+    .content_1 {
+      height: auto;
+      img {
+        height: auto;
+        width: 100%;
+      }
+      button{
+        background-color: @comColor;
+        color:#fff;
+        border: none;
+      }
+      li a{
+          background-color: #fff;
+          color: #000;
+          &:hover{
+            background-color: #e6e6e6;
+          }
+      }
+    }
+  }
+  //notesList
+  .content_notesList {
+    .notes_content {
+      height: auto;
+    }
+    .notes_txt {
+        h3{
+            margin-top: 0px;
+        }
+      .notes_date {
+        font-size: 18px;
+        text-align: right;
+        padding-right: 20px;
+        font-style: italic;
+      }
+    }
+  }
+}
+//skill list
+.skill{
+    .panel-heading{
+        padding-left: 0;
+    }
+    .table{
+        td{
+            width: 25%;
+        }
+    }
+    .tableItem_title{
+        font-weight: 600; 
+    }
+
+}
+
+//footer
+#footer {
+  text-align: center;
+  margin: 50px 0;
+
+  .foot-btn {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    box-shadow: 0 5px 10px -5px #b0afaf;
+    border: none;
+    border-radius: 30%;
+    background: @fontColor;
+    color: @comColor;
+    overflow: hidden;
+    position: relative;
+    padding-top: 0px;
+    padding-left: 5px;
+
+    span {
+      display: inline-block;
+      font-size: 30px;
+      line-height: 40px;
+      transition: 0.2s linear;
+    }
+    &:hover span {
+      transform: scale(1.1);
+      color: #f1f1f1;
+    }
+    &::before {
+      content: "";
+      width: 120%;
+      height: 120%;
+      background: #000;
+      position: absolute;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    }
+    &:hover::before {
+      animation: fontLinkIcon 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+  }
+// icon animation
+  @keyframes fontLinkIcon {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+    50% {
+      left: 10%;
+      top: -30%;
+    }
+    100% {
+      left: -10%;
+      top: -10%;
+    }
+  }
+
+  #footer-txt {
+    color: #000;
+  }
+}
+

@@ -1,0 +1,104 @@
+<!-- ---
+layout: default
+title: Knowledge is infinite
+---
+
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    {{ post.date | date_to_string }}
+  </li>
+  {% endfor %}
+</ul> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Login</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background: #eee;
+				min-height: 100vh;
+			}
+			.title {
+				margin: 0;
+				padding: 20px;
+				font-size: 36px;
+				text-align: center;
+			}
+			.nav {
+				min-height: 80vh;
+				width: 180px;
+				background: #888888;
+				border-radius: 0 0 10px 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: stretch;
+				transition: 0.4s;
+				position: relative;
+				left: -180px;
+			}
+			.nav::before {
+				content: '目录';
+				width: 30px;
+				height: 100px;
+				border-radius: 0 8px 8px 0;
+				background: #888888;
+				position: absolute;
+				top: 0px;
+				right: -30px;
+				font-family: '宋体';
+				font-size: 22px;
+				text-align: center;
+				line-height: 50px;
+				color: #82ccdd;
+			}
+			.nav:hover {
+				left: 0;
+			}
+			.btn {
+				height: 40px;
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.btn a {
+				color: #82ccdd;
+				text-decoration: none;
+				font-size: 16px;
+				transition: 0.4s;
+				font-family: '宋体';
+			}
+			.btn a:hover {
+				font-size: 20px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="title">Web项目Demo</p>
+		<div class="nav">
+            <div class="btn"><a href="./src/mediaButtons.html">社交媒体按钮</a></div>
+			<div class="btn"><a href="./src/loadingAnimation_1.html">加载等待动画1</a></div>
+			<div class="btn"><a href="./src/loadingAnimation_2.html">加载等待动画2</a></div>
+            <div class="btn"><a href="./src/loadingAnimation_3.html">加载等待动画3</a></div>
+            <div class="btn"><a href="./src/flipCard.html">翻转卡片</a></div>
+            <div class="btn"><a href="./src/sliderShow.html">轮播图</a></div>
+            <div class="btn"><a href="./src/signUp.html">登录页面</a></div>
+            <div class="btn"><a href="./src/waterFall.html">瀑布流</a></div>
+			<div class="btn"><a href="./src/digitalClock.html">数字时钟</a></div>
+			<div class="btn"><a href="./src/backgroundAnimation.html">css-3D-Animation</a></div>          
+		</div>
+	</body>
+</html>
