@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>loadingAnimation_2</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #3a538b;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+      }
+
+      .box .b {
+        border-radius: 50%;
+        border-left: 4px solid;
+        border-right: 4px solid;
+        border-top: 4px solid transparent !important; /*两行都注释或者只注释掉任意一行都有另一番有趣的效果*/
+        border-bottom: 4px solid transparent !important; /* 两行都注释或者只注释掉任意一行都有另一番有趣的效果*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ro 2s infinite;
+      }
+
+      .box .b1 {
+        border-color: #a1ebf7;
+        width: 120px;
+        height: 120px;
+      }
+
+      .box .b2 {
+        border-color: #2af1af;
+        width: 1000px;
+        height: 1000px;
+        animation-delay: 0.2s;
+      }
+
+      .box .b3 {
+        border-color: #e9d310;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0.4s;
+      }
+
+      .box .b4 {
+        border-color: #f569ad;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0.6s;
+        position: relative;
+      }
+
+      @keyframes ro {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        50% {
+          transform: translate(-50%, -50%) rotate(-180deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="b b1"></div>
+      <div class="b b2"></div>
+      <div class="b b3"></div>
+      <div class="b b4"></div>
+    </div>
+  </body>
+</html>
