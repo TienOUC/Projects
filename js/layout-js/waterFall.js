@@ -1,57 +1,57 @@
 var data = [
     {
-      "src": "../img/_Layout-img/1.png",
+      "src": "../img/layout-img/1.png",
       "title": "第一怪"
     },{
-      "src": "../img/_Layout-img/2.png",
+      "src": "../img/layout-img/2.png",
       "title": "第二怪"
     },{
-      "src": "../img/_Layout-img/3.png",
+      "src": "../img/layout-img/3.png",
       "title": "第三怪"
     },{
-      "src": "../img/_Layout-img/4.png",
+      "src": "../img/layout-img/4.png",
       "title": "第四怪"
     },{
-      "src": "../img/_Layout-img/5.png",
+      "src": "../img/layout-img/5.png",
       "title": "第五怪"
     },{
-      "src": "../img/_Layout-img/6.png",
+      "src": "../img/layout-img/6.png",
       "title": "第六怪"
     },{
-      "src": "../img/_Layout-img/7.png",
+      "src": "../img/layout-img/7.png",
       "title": "第七怪"
     },{
-      "src": "../img/_Layout-img/8.png",
+      "src": "../img/layout-img/8.png",
       "title": "第八怪"
     },{
-      "src": "../img/_Layout-img/9.png",
+      "src": "../img/layout-img/9.png",
       "title": "第九怪"
     },{
-      "src": "../img/_Layout-img/10.png",
+      "src": "../img/layout-img/10.png",
       "title": "第十怪"
     },{
-      "src": "../img/_Layout-img/11.png",
+      "src": "../img/layout-img/11.png",
       "title": "第十一怪"
     },{
-      "src": "../img/_Layout-img/12.png",
+      "src": "../img/layout-img/12.png",
       "title": "第十二怪"
     },{
-      "src": "../img/_Layout-img/13.png",
+      "src": "../img/layout-img/13.png",
       "title": "第十三怪"
     },{
-      "src": "../img/_Layout-img/14.png",
+      "src": "../img/layout-img/14.png",
       "title": "第十四怪"
     },{
-      "src": "../img/_Layout-img/15.png",
+      "src": "../img/layout-img/15.png",
       "title": "第十五怪"
     },{
-      "src": "../img/_Layout-img/16.png",
+      "src": "../img/layout-img/16.png",
       "title": "第十六怪"
     },{
-      "src": "../img/_Layout-img/17.png",
+      "src": "../img/layout-img/17.png",
       "title": "第十七怪"
     },{
-      "src": "../img/_Layout-img/18.png",
+      "src": "../img/layout-img/18.png",
       "title": "第十八怪"
     }
   ]

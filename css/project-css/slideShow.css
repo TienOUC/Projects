@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: "iconfont";
-  src: url("../_Projects/font/iconfont.eot");
-  src: url("../_Projects/font/iconfont.eot") format("embedded-opentype"),
-    url("../_Projects/font/iconfont.woff") format("woff"),
-    url("../_Projects/font/iconfont.ttf") format("truetype"),
-    url("../_Projects/font/iconfont.svg#iconfont") format("svg");
+  src: url("../project-css/font/iconfont.eot");
+  src: url("../project-css/font/iconfont.eot") format("embedded-opentype"),
+    url("../project-css/font/iconfont.woff") format("woff"),
+    url("../project-css/font/iconfont.ttf") format("truetype"),
+    url("../project-css/font/iconfont.svg#iconfont") format("svg");
 }
 
 a {
@@ -30,7 +30,7 @@ body {
 .main {
   width: 1200px;
   height: 460px;
-  margin: 30px auto;
+  margin: 100px auto;
   position: relative;
   overflow: hidden;
 }
