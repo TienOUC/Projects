@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-top: 70px;
+  min-width: 300px;
+  min-height: 400px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  overflow-x: hidden;
+}
+.hide {
+  display: none;
+}
+.com_width {
+  min-width: 300px;
+}
+.content_title,
+.notes_title,
+.skill-title {
+  padding-bottom: 20px;
+}
+.header {
+  background-color: #262626 !important;
+  height: 70px;
+  line-height: 70px;
+}
+.header .logo span {
+  color: #fff;
+  font-size: 24px;
+}
+.header .logo span i {
+  margin-left: 5px;
+}
+.header .serach {
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  float: right;
+}
+.header .serach input {
+  margin-top: 20px;
+  height: 30px;
+  border: none;
+  outline-style: none;
+}
+.header .serach .btn_show {
+  height: 30px;
+  background-color: #464646;
+  color: #d1cece;
+  border-color: #464646;
+}
+.header .serach .btn_show:hover {
+  color: #fff;
+}
+.header .serach .btn_show span {
+  top: -4px;
+}
+.banner {
+  padding: 0 auto;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 15%, #e2e1e1 100%);
+}
+.banner p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #464646;
+}
+.banner a {
+  background-color: #464646;
+  border: none;
+  color: #fff;
+}
+.content .content_itemList .content_1 {
+  height: auto;
+}
+.content .content_itemList .content_1 img {
+  height: auto;
+  width: 100%;
+}
+.content .content_itemList .content_1 a {
+  background-color: #464646;
+  color: #fff;
+  border: none;
+}
+.content .content_itemList .content_1 a:hover {
+  background-color: #23527c;
+}
+.content .content_notesList .notes_content {
+  height: auto;
+}
+.content .content_notesList .notes_txt h3 {
+  margin-top: 0px;
+}
+.content .content_notesList .notes_txt .notes_date {
+  font-size: 18px;
+  text-align: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.skill .panel-heading {
+  padding-left: 0;
+}
+.skill .table td {
+  align-items: center;
+}
+.skill .tableItem_title {
+  font-weight: 600;
+}
+#footer {
+  text-align: center;
+  margin: 50px 0;
+}
+#footer .foot-btn {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  box-shadow: 0 5px 10px -5px #b0afaf;
+  border: none;
+  border-radius: 30%;
+  background: #fff;
+  color: #464646;
+  overflow: hidden;
+  position: relative;
+  padding-top: 0px;
+  padding-left: 5px;
+}
+#footer .foot-btn span {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 40px;
+  transition: 0.2s linear;
+}
+#footer .foot-btn:hover span {
+  transform: scale(1.1);
+  color: #f1f1f1;
+}
+#footer .foot-btn::before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  background: #000;
+  position: absolute;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+#footer .foot-btn:hover::before {
+  animation: fontLinkIcon 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes fontLinkIcon {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
+#footer #footer-txt {
+  color: #000;
+}

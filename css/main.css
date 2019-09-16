@@ -1,171 +1,109 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 body {
-  padding-top: 70px;
-  min-width: 300px;
-  min-height: 400px;
-  font-family: "Microsoft YaHei", "微软雅黑";
+  margin: 0;
+  padding: 0;
+  font-family: "Micorsoft YaHei", "微软雅黑";
+  background: #eee;
 }
-.hide {
-  display: none;
-}
-.com_width {
-  min-width: 300px;
-}
-.content_title,
-.notes_title,
-.skill-title {
-  padding-bottom: 20px;
-}
-.header {
-  background-color: #262626 !important;
-  height: 70px;
-  line-height: 70px;
-}
-.header .logo span {
-  color: #fff;
-  font-size: 24px;
-}
-.header .logo span i {
-  margin-left: 5px;
-}
-.header .serach {
-  width: 200px;
-  height: 70px;
-  line-height: 70px;
-  float: right;
-}
-.header .serach input {
-  margin-top: 20px;
-  height: 30px;
-  border: none;
-  outline-style: none;
-}
-.header .serach .btn_show {
-  height: 30px;
-  background-color: #464646;
-  color: #d1cece;
-  border-color: #464646;
-}
-.header .serach .btn_show:hover {
-  color: #fff;
-}
-.header .serach .btn_show span {
-  top: -4px;
-}
-.banner {
-  padding: 0 auto;
-  text-align: center;
-  background: linear-gradient(180deg, #fff 15%, #e2e1e1 100%);
-}
-.banner p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #464646;
-}
-.banner a {
-  background-color: #464646;
-  border: none;
-  color: #fff;
-}
-.content .content_itemList .content_1 {
-  height: auto;
-}
-.content .content_itemList .content_1 img {
-  height: auto;
-  width: 100%;
-}
-.content .content_itemList .content_1 button {
-  background-color: #464646;
-  color: #fff;
-  border: none;
-}
-.content .content_itemList .content_1 li a {
-  background-color: #fff;
-  color: #000;
-}
-.content .content_itemList .content_1 li a:hover {
-  background-color: #e6e6e6;
-}
-.content .content_notesList .notes_content {
-  height: auto;
-}
-.content .content_notesList .notes_txt h3 {
-  margin-top: 0px;
-}
-.content .content_notesList .notes_txt .notes_date {
-  font-size: 18px;
-  text-align: right;
-  padding-right: 20px;
-  font-style: italic;
-}
-.skill .panel-heading {
-  padding-left: 0;
-}
-.skill .table td {
-  width: 25%;
-}
-.skill .tableItem_title {
-  font-weight: 600;
-}
-#footer {
-  text-align: center;
-  margin: 50px 0;
-}
-#footer .foot-btn {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-  box-shadow: 0 5px 10px -5px #b0afaf;
-  border: none;
-  border-radius: 30%;
-  background: #fff;
-  color: #464646;
-  overflow: hidden;
-  position: relative;
-  padding-top: 0px;
-  padding-left: 5px;
-}
-#footer .foot-btn span {
-  display: inline-block;
-  font-size: 30px;
-  line-height: 40px;
-  transition: 0.2s linear;
-}
-#footer .foot-btn:hover span {
-  transform: scale(1.1);
-  color: #f1f1f1;
-}
-#footer .foot-btn::before {
-  content: "";
-  width: 120%;
-  height: 120%;
-  background: #000;
+.content {
   position: absolute;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -265px;
+  width: 530px;
+  height: 360px;
 }
-#footer .foot-btn:hover::before {
-  animation: fontLinkIcon 0.7s 1;
-  top: -10%;
-  left: -10%;
+.content .animation:before {
+  content: "Animation";
 }
-@keyframes fontLinkIcon {
-  0% {
-    left: -110%;
-    top: 90%;
-  }
-  50% {
-    left: 10%;
-    top: -30%;
-  }
-  100% {
-    left: -10%;
-    top: -10%;
-  }
+.content .layout:before {
+  content: "Layout";
 }
-#footer #footer-txt {
-  color: #000;
+.content .project:before {
+  content: "Project";
+}
+.ul-common {
+  top: 50%;
+  left: 50%;
+  margin: 30px 0;
+  padding: 0;
+  display: flex;
+  width: 530px;
+  height: 80px;
+}
+.ul-common:before {
+  position: absolute;
+  width: 530px;
+  height: 80px;
+  background: linear-gradient(45deg, #6e3ee8, #8dc2d7);
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+  font-size: 30px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.ul-common:hover:before {
+  width: 76px;
+  height: 76px;
+  line-height: 76px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #141414;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), inset 0 -2px 2px #000000, inset 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 6px #465497;
+}
+.ul-common li {
+  position: absolute;
+  list-style: none;
+  transition: 1s;
+}
+.ul-common li a {
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 1s;
+  text-decoration: none;
+}
+.ul-common li:nth-child(1) a {
+  background: #21b41e;
+}
+.ul-common li:nth-child(2) a {
+  background: #55acee;
+}
+.ul-common li:nth-child(3) a {
+  background: #dd4b39;
+}
+.ul-common li:nth-child(4) a {
+  background: #0077b5;
+}
+.ul-common li:nth-child(5) a {
+  background: #d4bc24;
+}
+.ul-common:hover li:nth-child(1) a {
+  transform: translateX(80px) rotate(360deg);
+  transition-delay: 0.8s;
+}
+.ul-common:hover li:nth-child(2) a {
+  transform: translateX(170px) rotate(360deg);
+  transition-delay: 0.6s;
+}
+.ul-common:hover li:nth-child(3) a {
+  transform: translateX(260px) rotate(360deg);
+  transition-delay: 0.4s;
+}
+.ul-common:hover li:nth-child(4) a {
+  transform: translateX(350px) rotate(360deg);
+  transition-delay: 0.2s;
+}
+.ul-common:hover li:nth-child(5) a {
+  transform: translateX(440px) rotate(360deg);
+  transition-delay: 0s;
 }
