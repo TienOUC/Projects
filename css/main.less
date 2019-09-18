@@ -4,6 +4,8 @@ body {
   font-family: "Micorsoft YaHei", "微软雅黑";
   // background: #eee;
 }
+
+//background part
 .bg-animation {
   position: absolute;
   height: 100%;
@@ -230,7 +232,7 @@ body {
   }
 }
 
-
+//content part
 .content {
   position: absolute;
   top: 50%;
@@ -239,7 +241,7 @@ body {
   margin-left: -265px;
   width: 530px;
   height: 360px;
-  z-index: 1;
+  // z-index: 1;
   .animation {
     &:before {
       content: "Animation";
@@ -256,7 +258,7 @@ body {
     }
   }
 }
-.ul-common {
+.common{
   top: 50%;
   left: 50%;
   margin: 30px 0;
@@ -278,17 +280,6 @@ body {
     transition: 0.5s;
     z-index: 1;
   }
-  &:hover:before {
-    width: 76px;
-    height: 76px;
-    line-height: 76px;
-    font-size: 14px;
-    font-weight: 900;
-    color: #141414;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), inset 0 -2px 2px rgba(0, 0, 0, 1),
-      inset 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 6px #465497;
-  }
-
   li {
     position: absolute;
     list-style: none;
@@ -324,6 +315,19 @@ body {
     &:nth-child(5) a {
       background: #d4bc24;
     }
+  }
+}
+.ul-common {
+
+  &:hover:before {
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #141414;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), inset 0 -2px 2px rgba(0, 0, 0, 1),
+      inset 0 2px 2px rgba(255, 255, 255, 0.5), 0 0 0 6px #465497;
   }
 
   &:hover li:nth-child(1) a {
