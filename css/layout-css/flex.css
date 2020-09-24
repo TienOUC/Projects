@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  width: 100vw;
+  height: 80px;
+  background-color: #af626c;
+}
+
+.main {
+  background-color: #5b5959;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left, 
+.center, 
+.right{
+  height: calc(100vh - 160px);
+}
+
+.left {
+  width: 200px;
+  background-color: #f2a548;
+}
+
+.center {
+    /* flex-shrink 设置为0，当页面缩小至空间不够时，center元素定格在 flex-basis，不会进一步缩小  */
+  flex: 1 0 auto;  
+  flex-basis: 300px;        
+  background-color: #0eb44e;
+}
+
+.right {
+  width: 200px;
+  background-color: #7c64e7;
+}
+
+/*
+1. flex-grow 默认不放大（默认值：0），项目在有剩余空间的情况下是否放大（0 不放大， 1 放大）
+eg: 共三个项目，前两个项目 flex-grow：0； 第三个项目 flex-grow：1；则是第三个项目铺满剩余空间（无论其自身是否有固定宽度都会铺满剩余空间）
+
+2. flex-shrink 默认缩小（默认值： 1） 项目在空间不足时等比缩小（0 不缩小， 1 缩小）
+
+3. flex-basis 默认auto，设置项目宽度，项目有 width 时，以 width 为自身宽度，但若设置了 flex-basis：[宽度值]；则该值权重最高，会覆盖 width
+*/
