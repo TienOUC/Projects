@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header,
+footer {
+  height: 100px;
+  background-color: #878b89;
+}
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 300px;
+  grid-template-rows: calc(100vh - 200px);
+}
+.container div:nth-child(1) {
+  background-color: #fa8072;
+}
+.container div:nth-child(2) {
+  background-color: #89fa72;
+}
+.container div:nth-child(3) {
+  background-color: #7294fa;
+}
